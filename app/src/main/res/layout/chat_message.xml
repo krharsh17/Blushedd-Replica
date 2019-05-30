@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/MessageHolder"
+    android:background="#00000000"
+    android:gravity="end">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:id="@+id/MessageText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MessageTime"
+        android:textColor="#666666"
+        android:layout_alignEnd="@id/MessageText"
+        android:layout_alignBottom="@id/MessageText"
+        android:paddingEnd="16dp"
+        android:visibility="gone"
+        android:textSize="10sp"
+        android:paddingBottom="4dp"
+        tools:ignore="RtlSymmetry,SmallSp" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:visibility="gone"
+        android:background="@drawable/round_chat_background_right"
+        android:scaleType="centerCrop"
+        android:id="@+id/MessagePhoto"
+        android:contentDescription="@string/loading"/>
+
+    <ProgressBar
+        android:id="@+id/ProgressDownload"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="100dp"
+        />
+
+</RelativeLayout>
